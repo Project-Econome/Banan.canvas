@@ -1,9 +1,9 @@
 {
-  "name": "@tryforge/forge.canvas",
+  "name": "@econome/banan.canvas",
   "description": "Well the name says what it does.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "dist/index.js",
-  "author": "aggelos007",
+  "author": "econome",
   "license": "MIT",
   "scripts": {
     "docgen": "tsc && typedoc src/index.ts && node dist/docgen",

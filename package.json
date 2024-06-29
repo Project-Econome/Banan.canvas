@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tryforge/ForgeCanvas.git"
+    "url": "git+https://github.com/Project-Econome/Banan.canvas.git"
   },
-  "homepage": "https://github.com/tryforge/ForgeCanvas#readme",
+  "homepage": "https://github.com/Project-Econome/Banan.canvas#readme",
   "dependencies": {
     "@napi-rs/canvas": "^0.1.52"
   },

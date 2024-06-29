@@ -1,0 +1,26 @@
+{
+  "name": "@tryforge/forge.canvas",
+  "description": "Well the name says what it does.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "aggelos007",
+  "license": "MIT",
+  "scripts": {
+    "docgen": "tsc && typedoc src/index.ts && node dist/docgen",
+    "test": "tsc && echo Done compiling! && node dist/__tests__ && echo Finished test!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryforge/ForgeCanvas.git"
+  },
+  "homepage": "https://github.com/tryforge/ForgeCanvas#readme",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.52"
+  },
+  "devDependencies": {
+    "@tryforge/forgescript": "^1.4.0",
+    "@types/node": "^20.14.0",
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5"
+  }
+}

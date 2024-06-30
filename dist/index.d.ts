@@ -1,5 +1,5 @@
 import { ForgeExtension } from "@tryforge/forgescript";
-export declare class ForgeCanvas extends ForgeExtension {
+export declare class BananCanvas extends ForgeExtension {
     name: string;
     description: string;
     version: string;

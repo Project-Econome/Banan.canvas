@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ForgeCanvas = void 0;
+exports.BananCanvas = void 0;
 const forgescript_1 = require("@tryforge/forgescript");
 const path_1 = require("path");
-class ForgeCanvas extends forgescript_1.ForgeExtension {
+class BananCanvas extends forgescript_1.ForgeExtension {
     name = "BananCanvas";
     description = "Well the name says what it does.";
     version = "2.0.0";
@@ -12,6 +12,6 @@ class ForgeCanvas extends forgescript_1.ForgeExtension {
     }
     ;
 }
-exports.ForgeCanvas = ForgeCanvas;
+exports.BananCanvas = BananCanvas;
 ;
 //# sourceMappingURL=index.js.map

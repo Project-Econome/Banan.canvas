@@ -2,7 +2,7 @@
 <h1 align="center">Banan Canvas</h1><p align="center">A Canvas extension for ForgeScript.</p>
 
 <p align="center">
-<a href="https://github.com/Project-Econome/Banan.canvas/"><img src="https://img.shields.io/github/package-json/v/Project-Econome/Banan.canvas/main?label=@econome/banan.canvas&color=5c16d4" alt="@econome/banan.canvas"></a>
+<a href="https://github.com/Project-Econome/Banan.canvas/"><img src="https://img.shields.io/github/package-json/v/Project-Econome/Banan.canvas/main?label=Project-Econome/Banan.canvas&color=5c16d4" alt="@econome/banan.canvas"></a>
 <a href="https://github.com/tryforge/ForgeScript/"><img src="https://img.shields.io/github/package-json/v/tryforge/ForgeScript/main?label=@tryforge/forgescript&color=5c16d4" alt="@tryforge/forgescript"></a>
 <a href="https://discord.gg/hcJgjzPvqb"><img src="https://img.shields.io/discord/739934735387721768?logo=discord" alt="Discord"></a>
 </p>

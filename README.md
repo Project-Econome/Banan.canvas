@@ -1,4 +1,5 @@
-<p align="center"><img src="https://cdn.discordapp.com/attachments/1252251630913458229/1256923064973918248/6f6ba218.webp?ex=66828853&is=668136d3&hm=3a55424c41a55d4b753cd32d910a5cee7e15b79cd4929b3bcb12ea5cfabbe259&?size=1024" alt="Banan logo" width="512" height="512"></p>
+<p align="center"><img src="https://cdn.discordapp.com/attachments/1252251630913458229/1256923064973918248/6f6ba218.webp?ex=66828853&is=668136d3&hm=3a55424c41a55d4b753cd32d910a5cee7e15b79cd4929b3bcb12ea5cfabbe259&?size=1024" alt="Banan logo" style="width:512px;
+                     height: 512px"></p>
 <h1 align="center">Banan Canvas</h1><p align="center">A Canvas extension for ForgeScript.</p>
 
 <p align="center">

@@ -1,27 +1,47 @@
-# ForgeCanvas
-Easy to use canvas for forge.
+<p align="center"><img src="https://cdn.discordapp.com/emojis/1185683362334134362.png?size=1024" alt="Banan logo"></p>
+<h1 align="center">Banan Canvas</h1><p align="center">A Canvas extension for ForgeScript.</p>
 
-[![@tryforge/forge.canvas](https://img.shields.io/github/package-json/v/tryforge/ForgeCanvas/main?label=@tryforge/forge.canvas&color=5c16d4)](https://github.com/tryforge/ForgeCanvas/)
-[![@tryforge/forgescript](https://img.shields.io/github/package-json/v/tryforge/ForgeScript/main?label=@tryforge/forgescript&color=5c16d4)](https://github.com/tryforge/ForgeScript/)
-[![Discord](https://img.shields.io/discord/739934735387721768?logo=discord)](https://discord.gg/hcJgjzPvqb)
-## How to use
+<p align="center">
+<a href="https://github.com/Project-Econome/Banan.canvas/"><img src="https://img.shields.io/github/package-json/v/Project-Econome/Banan.canvas/main?label=@econome/banan.canvas&color=5c16d4" alt="@econome/banan.canvas"></a>
+<a href="https://github.com/tryforge/ForgeScript/"><img src="https://img.shields.io/github/package-json/v/tryforge/ForgeScript/main?label=@tryforge/forgescript&color=5c16d4" alt="@tryforge/forgescript"></a>
+<a href="https://discord.gg/hcJgjzPvqb"><img src="https://img.shields.io/discord/739934735387721768?logo=discord" alt="Discord"></a>
+</p>
+<h2 align="center">Contents</h2>
 
-Download this package:
+1. Installation
+   - [Installation](#Installation)
+2. [Credits](#credits)
+<br>
+
+<h3 align="center">Installation</h3><hr>
+
+1. Run the following command to install the required `npm packages`:
 ```bash
-npm i @tryforge/forge.canvas
+npm i github:Project-Econome/Banan.canvas
 ```
+2. Now, in your client initialization:
+```js
+const { BananCanvas } = require("@econome/banan.canvas")
 
-Now, in your client initialization:
-```ts
-const { ForgeCanvas } = require("@tryforge/forge.canvas")
-
-// I'll assume client, can be bot or anything else
+/* I'm assuming that the client can be an app or anything else */
 const client = new ForgeClient({
     ...options // The options you currently have
     extensions: [
-        new ForgeCanvas()
+        new BananCanvas()
     ]
 })
 ```
-And voi-la, you now have canvas functions loaded to your bot. <br>
-Check our [docs](https://docs.botforge.org/p/ForgeCanvas/) for info of all functions available.
+Congratulations, you have successfully setup Banan Canvas!
+
+
+
+<h2 align="center">Credits</h2>
+
+*Thanks for reading till the end and using Banan Canvas ;)* <br>
+This package was made with love by [devlordduck](https://discord.com/users/1096717977304453160), an Epic Person who develops cool Canvas extensions.
+
+Contributor | Contribution | Conatct
+-|-|-
+devlordduck|Main developer|[Discord](https://discord.com/users/1096717977304453160) [GitHub](https://github.com/LordexDuck3990)
+fradz_lifez|Main Tester/ Ideas|[Discord](https://discord.com/users/838105973985771520) [GitHub](https://github.com/Project-Econome)
+

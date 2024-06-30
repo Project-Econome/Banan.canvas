@@ -40,7 +40,7 @@ Congratulations, you have successfully setup Banan Canvas!
 *Thanks for reading till the end and using Banan Canvas ;)* <br>
 This package was made with love by [devlordduck](https://discord.com/users/1096717977304453160), an Epic Person who develops cool Canvas extensions.
 
-Contributor | Contribution | Conatct
+Contributor | Contribution | Contact
 -|-|-
 devlordduck|Main developer|[Discord](https://discord.com/users/1096717977304453160) [GitHub](https://github.com/LordexDuck3990)
 fradz_lifez|Main Tester/ Ideas|[Discord](https://discord.com/users/838105973985771520) [GitHub](https://github.com/Project-Econome)

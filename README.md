@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn.discordapp.com/emojis/1185683362334134362.png?size=1024" alt="Banan logo"></p>
+<p align="center"><img src="https://cdn.discordapp.com/emojis/118568332334134362.png?size=1024" alt="Banan logo"></p>
 <h1 align="center">Banan Canvas</h1><p align="center">A Canvas extension for ForgeScript.</p>
 
 <p align="center">

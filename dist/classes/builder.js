@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CanvasBuilder = exports.MeasureTextProperty = exports.textAlign = exports.Filter = exports.FilterMethod = exports.WidthOrHeight = exports.GetOrSet = void 0;
+exports.CanvasBuilder = exports.MeasureTextProperty = exports.textBaseline = exports.textAlign = exports.Filter = exports.FilterMethod = exports.WidthOrHeight = exports.GetOrSet = void 0;
 const canvas_1 = require("@napi-rs/canvas");
 const util_1 = require("./util");
+// Enums
 var GetOrSet;
 (function (GetOrSet) {
     GetOrSet[GetOrSet["get"] = 0] = "get";
@@ -39,12 +40,22 @@ var Filter;
 ;
 var textAlign;
 (function (textAlign) {
-    textAlign[textAlign["start"] = 0] = "start";
-    textAlign[textAlign["right"] = 1] = "right";
-    textAlign[textAlign["center"] = 2] = "center";
-    textAlign[textAlign["left"] = 3] = "left";
-    textAlign[textAlign["end"] = 4] = "end";
+    textAlign["start"] = "end";
+    textAlign["left"] = "right";
+    textAlign["center"] = "center";
+    textAlign["right"] = "left";
+    textAlign["end"] = "start";
 })(textAlign || (exports.textAlign = textAlign = {}));
+;
+var textBaseline;
+(function (textBaseline) {
+    textBaseline[textBaseline["alphabetic"] = 0] = "alphabetic";
+    textBaseline[textBaseline["bottom"] = 1] = "bottom";
+    textBaseline[textBaseline["hanging"] = 2] = "hanging";
+    textBaseline[textBaseline["ideographic"] = 3] = "ideographic";
+    textBaseline[textBaseline["middle"] = 4] = "middle";
+    textBaseline[textBaseline["top"] = 5] = "top";
+})(textBaseline || (exports.textBaseline = textBaseline = {}));
 ;
 var MeasureTextProperty;
 (function (MeasureTextProperty) {
@@ -60,6 +71,7 @@ var MeasureTextProperty;
     MeasureTextProperty[MeasureTextProperty["width"] = 9] = "width";
 })(MeasureTextProperty || (exports.MeasureTextProperty = MeasureTextProperty = {}));
 ;
+// The builder itself
 class CanvasBuilder {
     static ctx;
     static util = util_1.CanvasUtil;
@@ -267,7 +279,11 @@ class CanvasBuilder {
         return CanvasBuilder;
     };
     setTextAlign = (align) => {
-        CanvasBuilder.ctx.textAlign = (textAlign[4 - align] ?? textAlign.left);
+        CanvasBuilder.ctx.textAlign = align;
+        return CanvasBuilder;
+    };
+    setTextBaseline = (baseline) => {
+        CanvasBuilder.ctx.textBaseline = textBaseline[baseline];
         return CanvasBuilder;
     };
     measureText = (text, font) => {

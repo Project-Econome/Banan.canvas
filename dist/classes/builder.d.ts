@@ -28,11 +28,19 @@ export declare enum Filter {
     saturate = 7
 }
 export declare enum textAlign {
-    start = 0,
-    right = 1,
-    center = 2,
-    left = 3,
-    end = 4
+    start = "end",
+    left = "right",
+    center = "center",
+    right = "left",
+    end = "start"
+}
+export declare enum textBaseline {
+    alphabetic = 0,
+    bottom = 1,
+    hanging = 2,
+    ideographic = 3,
+    middle = 4,
+    top = 5
 }
 export declare enum MeasureTextProperty {
     actualBoundingBoxAscent = 0,
@@ -65,6 +73,7 @@ export declare class CanvasBuilder {
     setShadow: (blur: number, color: number, offset?: number | number[]) => typeof CanvasBuilder;
     trim: () => typeof CanvasBuilder;
     setTextAlign: (align: textAlign) => typeof CanvasBuilder;
+    setTextBaseline: (baseline: textBaseline) => typeof CanvasBuilder;
     measureText: (text: string, font: string) => TextMetrics | undefined;
     rotate: (angle: number) => typeof CanvasBuilder;
     resize: (width: number, height: number) => typeof CanvasBuilder;

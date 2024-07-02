@@ -53,7 +53,7 @@ export default new NativeFunction({
         {
             name: "radius",
             description: "The rect corners radius.",
-            rest: false,
+            rest: true,
             type: ArgType.Number,
             required: false
         }
@@ -65,7 +65,15 @@ export default new NativeFunction({
         if (!canvs || !(canvs instanceof CanvasBuilder))
             return this.customError(`There's no such canvas named '${canvas}'`);
 
-        canvs.fillRect(color, x, y, width, height, radius ?? undefined);
+        canvs.fillRect(
+            color,
+            x,
+            y,
+            width,
+            height,
+            radius && radius.length === 1 ? radius[0] : radius
+        );
+        
         return this.success();
     }
 });

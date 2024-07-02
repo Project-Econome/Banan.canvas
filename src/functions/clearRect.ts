@@ -46,19 +46,26 @@ export default new NativeFunction({
         {
             name: "radius",
             description: "The rect corners radius.",
-            rest: false,
+            rest: true,
             type: ArgType.Number,
             required: false
         }
     ],
-    execute(ctx, [canvas, x, y, width, height, radius]) {
-        canvas = canvas?.trim();
+    execute(ctx, [name, x, y, width, height, radius]) {
+        name = name?.trim();
 
-        const canvs = ctx.getEnvironmentKey(`canvas_${canvas}`);
-        if (!canvs || !(canvs instanceof CanvasBuilder))
-            return this.customError(`There's no such canvas named '${canvas}'`);
+        const canvas = ctx.getEnvironmentKey(`canvas_${name}`);
+        if (!canvas || !(canvas instanceof CanvasBuilder))
+            return this.customError(`There's no such canvas named '${name}'`);
 
-        canvs.clearRect(x, y, width, height);
+        canvas.clearRect(
+            x,
+            y,
+            width,
+            height,
+            radius && radius.length === 1 ? radius[0] : radius
+        );
+        
         return this.success();
     }
 });

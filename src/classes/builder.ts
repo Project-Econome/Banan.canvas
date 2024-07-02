@@ -1,11 +1,13 @@
 import { SKRSContext2D, createCanvas, loadImage, Image } from "@napi-rs/canvas";
 import { CanvasUtil } from "./util";
 
+// Enums
 export enum GetOrSet { get, set };
 export enum WidthOrHeight { width, height };
 export enum FilterMethod { add, set, remove, clear, get, parse };
 export enum Filter { none, blur, sepia, grayscale, brightness, contrast, invert, saturate };
-export enum textAlign { start, right, center, left, end };
+export enum textAlign { start = "end", left = "right", center = "center", right = "left", end = "start" };
+export enum textBaseline { alphabetic, bottom, hanging, ideographic, middle, top };
 export enum MeasureTextProperty {
   actualBoundingBoxAscent,
   actualBoundingBoxDescent,
@@ -19,6 +21,7 @@ export enum MeasureTextProperty {
   width
 };
 
+// The builder itself
 export class CanvasBuilder {
   public static ctx: SKRSContext2D;
   public static util = CanvasUtil;
@@ -291,8 +294,12 @@ export class CanvasBuilder {
   };
 
   public setTextAlign = (align: textAlign) => {
-    CanvasBuilder.ctx.textAlign = (textAlign[4 - align] ?? textAlign.left) as CanvasTextAlign;
+    CanvasBuilder.ctx.textAlign = align as CanvasTextAlign;
+    return CanvasBuilder;
+  };
 
+  public setTextBaseline = (baseline: textBaseline) => {
+    CanvasBuilder.ctx.textBaseline = textBaseline[baseline] as CanvasTextBaseline;
     return CanvasBuilder;
   };
 

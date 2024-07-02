@@ -52,7 +52,7 @@ export default new NativeFunction({
         {
             name: "radius",
             description: "The radius of image corners.",
-            rest: false,
+            rest: true,
             type: ArgType.Number,
             required: false
         }
@@ -65,7 +65,15 @@ export default new NativeFunction({
         if (!canvs || !(canvs instanceof CanvasBuilder))
             return this.customError(`There's no such canvas named '${canvas}'`);
 
-        await canvs.drawImage(path, x, y, width ?? undefined, height ?? undefined, radius ?? undefined);
+        await canvs.drawImage(
+            path,
+            x,
+            y, 
+            width ?? undefined,
+            height ?? undefined,
+            radius && radius.length === 1 ? radius[0] : radius
+        );
+        
         return this.success();
     }
 });

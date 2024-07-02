@@ -32,7 +32,7 @@ declare const _default: NativeFunction<[{
 }, {
     name: string;
     description: string;
-    rest: false;
+    rest: true;
     type: ArgType.Number;
     required: false;
 }], true>;

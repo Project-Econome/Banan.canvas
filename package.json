@@ -1,7 +1,7 @@
 {
   "name": "@econome/banan.canvas",
   "description": "Well the name says what it does.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "dist/index.js",
   "author": "econome",
   "license": "MIT",

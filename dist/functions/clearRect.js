@@ -47,17 +47,17 @@ exports.default = new forgescript_1.NativeFunction({
         {
             name: "radius",
             description: "The rect corners radius.",
-            rest: false,
+            rest: true,
             type: forgescript_1.ArgType.Number,
             required: false
         }
     ],
-    execute(ctx, [canvas, x, y, width, height, radius]) {
-        canvas = canvas?.trim();
-        const canvs = ctx.getEnvironmentKey(`canvas_${canvas}`);
-        if (!canvs || !(canvs instanceof classes_1.CanvasBuilder))
-            return this.customError(`There's no such canvas named '${canvas}'`);
-        canvs.clearRect(x, y, width, height);
+    execute(ctx, [name, x, y, width, height, radius]) {
+        name = name?.trim();
+        const canvas = ctx.getEnvironmentKey(`canvas_${name}`);
+        if (!canvas || !(canvas instanceof classes_1.CanvasBuilder))
+            return this.customError(`There's no such canvas named '${name}'`);
+        canvas.clearRect(x, y, width, height, radius && radius.length === 1 ? radius[0] : radius);
         return this.success();
     }
 });

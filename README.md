@@ -12,6 +12,7 @@
 1. Installation
    - [Installation](#Installation)
 2. [Credits](#credits)
+3. [Support Server](https://discord.com/invite/vUH4fFdz28)
 <br>
 
 <h3 align="center">Installation</h3><hr>

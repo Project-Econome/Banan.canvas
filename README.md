@@ -45,5 +45,5 @@ This package was made with love by [devlordduck](https://discord.com/users/10967
 Contributor | Contribution | Contact
 -|-|-
 devlordduck|Main developer|[Discord](https://discord.com/users/1096717977304453160) [GitHub](https://github.com/LordexDuck3990)
-fradz_lifez|Main Tester/ Ideas|[Discord](https://discord.com/users/838105973985771520) [GitHub](https://github.com/Project-Econome)
+fradz_lifez|Main Tester/Ideas/Sub Developer|[Discord](https://discord.com/users/838105973985771520) [GitHub](https://github.com/Project-Econome)
 
